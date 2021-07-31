@@ -1,0 +1,39 @@
+.main {
+  width: 100%;
+  height: 56px;
+  color: #fff;
+  background-color: rgb(28, 120, 156);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  flex: 1;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-items: center;
+  margin-right: 10px;
+  li {
+    margin-right: 22px;
+    cursor: pointer;
+    a {
+      transition: all 2s;
+      &:hover {
+        border-bottom: #fff solid 1px;
+      }
+    }
+  }
+}
