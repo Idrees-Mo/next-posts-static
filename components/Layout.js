@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Layout = ({ title, description, children }) => {
@@ -9,7 +10,8 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={description} />
       </Head>
       <Navbar />
-      {children}
+      <div className="main">{children}</div>
+      <Footer />
     </div>
   );
 };
