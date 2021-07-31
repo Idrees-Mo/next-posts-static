@@ -19,8 +19,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 130px);
   background-color: rgb(74, 172, 175);
 }
