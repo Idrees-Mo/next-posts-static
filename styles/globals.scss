@@ -22,5 +22,18 @@ a {
   max-width: 1200px;
   margin: auto;
   min-height: calc(100vh - 130px);
-  background-color: rgb(74, 172, 175);
+}
+.title {
+  padding: 0 50px;
+  font-size: 36px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  padding: 6px 10px;
+  background-color: rgb(8, 136, 168);
+  &:hover {
+    background-color: rgb(31, 89, 104);
+  }
 }

@@ -1,18 +1,17 @@
 import axios from "axios";
 import Layout from "../components/Layout";
-import styles from "../styles/Home.module.css";
+import PostItem from "../components/PostItem";
+import styles from "../styles/Home.module.scss";
 
 export default function Home({ posts }) {
   return (
     <Layout title="Home" description="Posts home page">
-      <div>
+      <h1 className="title">All Posts</h1>
+      <ul className={styles.list}>
         {posts.map((post) => (
-          <li>
-            {post.id} - {post.title}
-            <a href={`/${post.id}`}>{post.id}</a>
-          </li>
+          <PostItem key={post.id} post={post} />
         ))}
-      </div>
+      </ul>
     </Layout>
   );
 }
